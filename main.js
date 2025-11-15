@@ -1,8 +1,9 @@
 const distanceEl = document.getElementById("distance");
 const ageEl = document.getElementById("age");
 const sendEl = document.getElementById("send");
-
-sendEl.addEventListener("click", function () {
+const resetEl = document.getElementById("reset");
+sendEl.addEventListener("click", function (event) {
+    event.preventDefault();
 
     console.log(distanceEl, ageEl.value);
 
@@ -18,10 +19,15 @@ sendEl.addEventListener("click", function () {
 
     if (ageEl.value == "minorenne") {
         discount = 0.8;
-    }else if (ageEl.value == "senior") {
+    } else if (ageEl.value == "senior") {
         discount = 0.6;
-    }else{}
+    } else { }
 
     let result = priceKm * discount;
     document.getElementById("cost").innerHTML = result;
 })
+reset.addEventListener("click", function () {
+    distanceEl = "";
+    ageEl = "";
+    result = "";
+}) 
