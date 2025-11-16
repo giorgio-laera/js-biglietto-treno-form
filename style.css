@@ -2,9 +2,19 @@
 body{
     background-color: #ffff57;
 }
+
 .title{
     margin-left: 1em;
 }
 .m-with{
     max-width: 75%;
+}
+#qr-code{
+    width: 100px;
+    float: right;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+#codeCP{
+    padding : 0 12px;
 }

@@ -15,9 +15,10 @@
         <h1 class="text-danger title">RitardExpres</h1>
     </header>
     <!-- dati per creare biglietto -->
-    <form class="container m-auto mt-5 bg-light m-with p-3 flex-wrap d-flex justify-content-around rounded-3" action="">
+    <form class="container m-auto mt-5 bg-light m-with p-3 flex-wrap d-flex g-1 justify-content-around rounded-3"
+        action="">
 
-        <input class="col-4" id="name" type="text" placeholder="inserire nome e cognome">
+        <input class="col-4" id="inputName" type="text" placeholder="inserire nome e cognome">
         <input class="col-4 ml-1 mr-1" id="distance" type="text" placeholder="inserire i km da percorrere">
         <select class="col-4" name="age" id="age">
             <option disabled selected>--scegli una fascia d'eta--</option>
@@ -33,22 +34,52 @@
 
     </form>
     <!-- biglietto -->
-     <div class="text-center">
-        <h3 class="text-danger m-auto">IL TUO BIGLIETTO</h3>
-     
-     </div>
-    <footer class="container m-auto mt-5 bg-light m-with p-3  rounded-3">
-        <h5>Dettaglio ritardatario</h5>
-        <div class="w-75 border">
-            <div class="flex-wrap d-flex justify-content-around text-primary">
-            <p>Nome del ritardatario:</p>
-            <p>Offerta:</p>
-            <p>costo biglietto:</p>
-        </div>
+    <div class="text-center">
+        <h3 class="text-danger m-auto mt-4">IL TUO BIGLIETTO</h3>
 
-        <p id="cost"></p>
-        </div>
-        
+    </div>
+    <footer id="footer" class=" d-none container m-auto mt-4 bg-light m-with p-3  rounded-3 mb-5">
+        <h5>Dettaglio ritardatario</h5>
+        <div class=" border">
+            <div class="row d-flex justify-content-around text-primary">
+                <div class="col-3 ml-1">
+                    <div class="row">Nome del ritardatario:</div>
+                    <div id="name" class="row mt-4 text-dark"></div>
+                </div>
+                <div class="col-1">
+                    <div class="row">Offerta:</div>
+                    <div id="supply" class="row text-dark mt-4"></div>
+                </div>
+                <div class="col-1">
+                    <div class="row">Carrozza:</div>
+                    <div id="carriage" class="row text-dark mt-4">5</div>
+                </div>
+                <div class="col-2">
+                    <div class="row m-0">Codice CP:</div>
+                    <div id="codeCP" class="row text-dark mt-4">56789</div>
+                </div>
+                    <div class="col-3">
+                        <div class="row">Costo biglietto:</div>
+                        <div id="cost" class="row text-dark text-center mt-4"></div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-between">
+                    <div class="col-8 justify-content-center m-auto ">
+                        <div class="row text-danger fs-4 text m-0 ">RitardExpres</div>
+                        <div class="row  fs-5 text text-primary m-0">Sempre in ritardo ma con stile!!</div>
+                    </div>
+                    <div class="col-4"><img id="qr-code" class="p-0 "
+                    src="https://hf-files-oregon.s3.amazonaws.com/hdpuscsd_kb_attachments/2024/06-17/23c16d47-8416-4b7a-8138-ce47635691d1/image-20240617080100-1.png"
+                    alt="QR-CODE BIGLIETTO"></div>
+                </div>
+                
+
+
+
+               
+
+            </div>
+
     </footer>
 
 
